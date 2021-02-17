@@ -5,3 +5,14 @@ $fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~@fortawesome/fontawesome-free/scss/brands';
 @import '~@fortawesome/fontawesome-free/scss/v4-shims';
+
+#messages-container, #friends-panel{
+ height: 403px;
+}
+#messages-container{
+  overflow-y: auto;
+}
+// prevent the last child be taller than the others
+.custom-boxes-container .column:last-child { 
+  margin-bottom: 1.5rem !important; 
+}
